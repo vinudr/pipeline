@@ -9,8 +9,9 @@ pipeline{
 		   '''
 		}
 	}
-        stage ('deploy1'){
-	parallel{
+        	parallel {
+		stage ('deploy1'){
+	
                 steps{
                 sh '''
                         echo "This is build stage"
