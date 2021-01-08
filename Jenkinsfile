@@ -9,7 +9,7 @@ pipeline{
 		   '''
 		}
 	}
-        	parallel {
+        	parallel{
 		stage ('deploy1'){
 	
                 steps{
