@@ -2,14 +2,14 @@ pipeline{
 	agent any
 	stages{
 	stage ('build'){
-		steps{
-		sh '''
+			steps{
+			sh '''
 			echo "This is build stage"
 			sleep 2
-		   '''
-		}
-	}
-        	parallel{
+		   	'''
+				}
+			}
+        		
 		stage ('deploy1'){
 	
                 steps{
@@ -27,7 +27,7 @@ pipeline{
                    '''
                 }
         }
-	}
+	
         stage ('test'){
                 steps{
                 sh '''
